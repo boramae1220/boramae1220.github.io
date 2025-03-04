@@ -1,0 +1,206 @@
+@font-face {
+    font-family: '느엉';
+    font-weight: 800;
+    src: url(../font/NanumSquareB.woff)
+}
+
+div,
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: '느엉';
+}
+
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/universe.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(70%);
+    padding: 1px;
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.kane {
+    color: white;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.main-button {
+    background: white;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    z-index: 5;
+}
+
+.main-text {
+    background-color: #eee;
+    font-size: 10px;
+    position: relative;
+    margin: auto;
+    width: 30%;
+    max-width: 300px;
+    height: 100px;
+    text-align: center;
+    top: -40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.form-background {
+    background-color: black;
+    padding: 30px;
+}
+
+.form-white {
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+.yellow-button {
+    padding: 10px;
+}
+
+.flex-item {
+    margin-right: 10px;
+}
+
+.flex-container {
+    /* height: 500px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 102, 102);
+    padding: 10px;
+}
+
+.shop-bg{
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item{
+    width: 33%;
+    padding: 10px;
+}
+
+.shop-item img{
+    width: 100%;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    /* transition-timing-function: cubic_bezier(); */
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay-black{
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.3);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.overlay-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-wrap:hover .overlay-black{
+    margin-top: 50%;
+}
+
+.pseudo::before{
+    content: '안녕';
+    color:red;
+    font-size: 30px;
+}
+
+/* css 파일 최하단에 적음, 여러 개 사용 가능 */
+@media screen and (max-width: 1200px){
+    .main-title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .main-title{
+        font-size: 20px;
+    }
+}

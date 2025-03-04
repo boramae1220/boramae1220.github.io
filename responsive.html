@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="css/responsive.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="product-container">
+        <div>
+            <i class="fa-solid fa-cart-shopping fa-3x"></i>
+            <h2>Fast Shipping</h2>
+            <p>lorem ipsum</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-train-subway fa-3x"></i>
+            <h2>Fast Shipping</h2>
+            <p>lorem ipsum</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-globe fa-3x"></i>
+            <h2>Fast Shipping</h2>
+            <p>lorem ipsum</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-download fa-3x"></i>
+            <h2>Fast Shipping</h2>
+            <p>lorem ipsum</p>
+        </div>
+    </div>
+
+    <input type="file"></input>
+    <style>
+        input[type=file]::-webkit-file-upload-button{
+            background: skyblue;
+            border: none;
+        }
+    </style>
+
+    <input placeholder="안녕하세요">
+    <style>
+        input::-webkit-input-placeholder{
+            color: red;
+        }
+    </style>
+
+    <input type="range">
+    <style>
+        input[type=range]{
+            appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb{
+            appearance: none;
+            background: red;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+    <progress value="0.5"></progress>
+    <style>
+        progress{
+            appearance: none;
+        }
+
+        progress::-webkit-progress-bar{
+            appearance: none;
+            background-color: red;
+        }
+
+        progress::-webkit-progress-value{
+            appearance: none;
+            background-color: black;
+        }
+    </style>
+</body>
+</html>
